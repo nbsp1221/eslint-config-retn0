@@ -1,0 +1,22 @@
+{
+  "name": "eslint-config-nbsp1221",
+  "version": "1.0.0",
+  "description": "nbsp1221's ESLint Configuration",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nbsp1221/eslint-config-nbsp1221.git"
+  },
+  "author": "nbsp1221",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nbsp1221/eslint-config-nbsp1221/issues"
+  },
+  "homepage": "https://github.com/nbsp1221/eslint-config-nbsp1221#readme",
+  "devDependencies": {
+    "eslint": "^7.22.0"
+  },
+  "peerDependencies": {
+    "eslint": "^7.22.0"
+  }
+}
