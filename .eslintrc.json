@@ -24,5 +24,23 @@
     "quotes": ["error", "single", { "avoidEscape": true }],
     "semi": ["error", "always"],
     "switch-colon-spacing": ["error", { "before": false, "after": true }]
-  }
+  },
+  "overrides": [
+    {
+      "extends": "plugin:@typescript-eslint/recommended",
+      "files": ["*.ts"],
+      "parser": "@typescript-eslint/parser",
+      "plugins": ["@typescript-eslint"],
+      "rules": {
+        "semi": "off",
+        "@typescript-eslint/member-delimiter-style": ["error", {
+          "multiline": {
+            "delimiter": "semi",
+            "requireLast": true
+          }
+        }],
+        "@typescript-eslint/semi": ["error"]
+      }
+    }
+  ]
 }
