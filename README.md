@@ -1,14 +1,14 @@
-# ✨ eslint-config-nbsp1221
+# ✨ eslint-config-retn0
 
-This package provides nbsp1221's `.eslintrc` as a shareable config.
+This package provides retn0's `.eslintrc` as a shareable config.
 
 ## Usage
 
-You can use it by specifying `eslint-config-nbsp1221` in the `extends` section of your ESLint configuration.
+You can use it by specifying `eslint-config-retn0` in the `extends` section of your ESLint configuration.
 
 ```jsonc
 {
-  "extends": "eslint-config-nbsp1221",
+  "extends": "eslint-config-retn0",
   "rules": {
     // Add your own rules if necessary
   }
