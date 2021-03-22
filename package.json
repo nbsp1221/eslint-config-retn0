@@ -1,13 +1,16 @@
 {
   "name": "eslint-config-retn0",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "ESLint Configuration for retn0",
   "main": "index.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/nbsp1221/eslint-config-retn0.git"
   },
-  "keywords": ["eslint", "eslint-config"],
+  "keywords": [
+    "eslint",
+    "eslint-config"
+  ],
   "author": "nbsp1221",
   "license": "MIT",
   "bugs": {
