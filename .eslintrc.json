@@ -30,6 +30,7 @@
     "object-curly-spacing": ["error", "always"],
     "quotes": ["error", "single", { "avoidEscape": true }],
     "semi": ["error", "always"],
+    "semi-spacing": ["error", { "before": false, "after": true }],
     "semi-style": ["error", "last"],
     "switch-colon-spacing": ["error", { "before": false, "after": true }]
   },
