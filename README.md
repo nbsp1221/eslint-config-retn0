@@ -1,6 +1,6 @@
 # ✨ eslint-config-retn0
 
-![npm](https://img.shields.io/npm/v/eslint-config-retn0)
+[![npm](https://img.shields.io/npm/v/eslint-config-retn0)](https://www.npmjs.com/package/eslint-config-retn0)
 
 This package provides retn0's `.eslintrc` as a shareable config.
 
