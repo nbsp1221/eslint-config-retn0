@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-retn0",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "ESLint Configuration for retn0",
   "main": "index.js",
   "repository": {
