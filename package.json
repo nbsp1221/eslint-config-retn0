@@ -18,10 +18,10 @@
   },
   "main": "index.js",
   "devDependencies": {
-    "@typescript-eslint/eslint-plugin": "5.25.0",
-    "@typescript-eslint/parser": "5.25.0",
-    "eslint": "8.16.0",
-    "typescript": "4.6.4"
+    "@typescript-eslint/eslint-plugin": "^5.25.0",
+    "@typescript-eslint/parser": "^5.25.0",
+    "eslint": "^8.16.0",
+    "typescript": "^4.6.4"
   },
   "peerDependencies": {
     "eslint": "^8.16.0"
