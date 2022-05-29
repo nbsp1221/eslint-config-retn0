@@ -39,6 +39,7 @@ const javascriptRules = {
   'object-curly-newline': ['error', { consistent: true, multiline: true }],
   'object-curly-spacing': ['error', 'always'],
   'object-property-newline': ['error', { allowAllPropertiesOnSameLine: true }],
+  'object-shorthand': ['error', 'always', { avoidQuotes: true }],
   'operator-linebreak': ['error', 'none'],
   'padded-blocks': ['error', 'never'],
   'quotes': ['error', 'single', { avoidEscape: true }],
