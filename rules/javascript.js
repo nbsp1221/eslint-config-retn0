@@ -34,6 +34,7 @@ const javascriptRules = {
   'no-tabs': ['error'],
   'no-trailing-spaces': ['error'],
   'no-unused-vars': ['warn'],
+  'no-var': ['error'],
   'no-whitespace-before-property': ['error'],
   'nonblock-statement-body-position': ['error'],
   'object-curly-newline': ['error', { consistent: true, multiline: true }],
