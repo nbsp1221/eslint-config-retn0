@@ -1,15 +1,17 @@
+const importRules = require('./rules/import');
 const javascriptRules = require('./rules/javascript');
-const typescriptRules = require('./rules/typescript');
 const reactRules = require('./rules/react');
+const typescriptRules = require('./rules/typescript');
 
 module.exports = {
   parserOptions: {
     ecmaVersion: 'latest',
   },
-  plugins: ['eslint-plugin-react'],
+  plugins: ['eslint-plugin-react', 'import'],
   rules: {
     ...javascriptRules,
     ...reactRules,
+    ...importRules,
   },
   overrides: [
     {
