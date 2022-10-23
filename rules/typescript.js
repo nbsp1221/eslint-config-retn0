@@ -4,6 +4,7 @@ const typescriptRules = {
   ...[
     'brace-style',
     'indent',
+    'no-unused-vars',
     'object-curly-spacing',
     'semi',
     'space-before-blocks',
