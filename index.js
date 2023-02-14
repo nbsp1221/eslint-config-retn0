@@ -28,7 +28,7 @@ function createConfig() {
     overrides: [],
   };
 
-  if (isInstalled('typescript')) {
+  if (isInstalled('typescript') && isInstalled('@typescript-eslint/parser') && isInstalled('@typescript-eslint/eslint-plugin')) {
     config.overrides.push({
       files: ['*.ts', '*.tsx'],
       parser: '@typescript-eslint/parser',
