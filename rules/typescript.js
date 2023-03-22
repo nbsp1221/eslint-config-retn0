@@ -1,6 +1,6 @@
 const javascriptRules = require('./javascript');
 
-const typescriptRules = {
+module.exports = {
   ...[
     'brace-style',
     'indent',
@@ -9,15 +9,13 @@ const typescriptRules = {
     'semi',
     'space-before-blocks',
     'space-infix-ops',
-  ].reduce((prevRules, name) => ({
+  ].reduce((prevRules, ruleName) => ({
     ...prevRules,
-    [name]: 'off',
-    [`@typescript-eslint/${name}`]: javascriptRules[name],
+    [ruleName]: 'off',
+    [`@typescript-eslint/${ruleName}`]: javascriptRules[ruleName],
   }), {}),
-  '@typescript-eslint/consistent-type-imports': ['error', { prefer: 'type-imports' }],
+  '@typescript-eslint/consistent-type-imports': ['error', { prefer: 'type-imports', fixStyle: 'inline-type-imports' }],
   '@typescript-eslint/member-delimiter-style': ['error', { multiline: { delimiter: 'semi' } }],
   '@typescript-eslint/method-signature-style': ['error', 'property'],
   '@typescript-eslint/type-annotation-spacing': ['error'],
 };
-
-module.exports = typescriptRules;
