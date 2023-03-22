@@ -1,0 +1,11 @@
+{
+  "cSpell.words": [
+    "nbsp",
+    "retn"
+  ],
+  "editor.codeActionsOnSave": {
+    "source.fixAll": true
+  },
+  "editor.tabSize": 2,
+  "files.eol": "\n"
+}
