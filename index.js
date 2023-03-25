@@ -29,6 +29,7 @@ function createConfig() {
       ...javascriptRules,
     },
     overrides: [],
+    settings: {},
   };
 
   if (isInstalled(['typescript', '@typescript-eslint/parser', '@typescript-eslint/eslint-plugin'])) {
@@ -55,6 +56,12 @@ function createConfig() {
   if (isInstalled(['tailwindcss', 'eslint-plugin-tailwindcss'])) {
     config.plugins.push('tailwindcss');
     config.rules = { ...config.rules, ...tailwindcssRules };
+    config.settings = {
+      ...config.settings,
+      tailwindcss: {
+        callees: ['classnames', 'clsx', 'ctl', 'twMerge'],
+      },
+    };
   }
 
   return config;
