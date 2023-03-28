@@ -20,6 +20,7 @@ function isInstalled(packageNames) {
 }
 
 function createConfig() {
+  /** @type {import('eslint').Linter.Config} */
   const config = {
     parserOptions: {
       ecmaVersion: 'latest',
