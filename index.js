@@ -24,6 +24,7 @@ function createConfig() {
   const config = {
     parserOptions: {
       ecmaVersion: 'latest',
+      sourceType: 'module',
     },
     plugins: [],
     rules: {
