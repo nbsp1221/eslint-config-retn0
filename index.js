@@ -23,6 +23,9 @@ function createConfig() {
   /** @type {import('eslint').Linter.Config} */
   const config = {
     parserOptions: {
+      ecmaFeatures: {
+        jsx: true,
+      },
       ecmaVersion: 'latest',
       sourceType: 'module',
     },
