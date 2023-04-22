@@ -6,6 +6,16 @@
 
 This package provides retn0's `.eslintrc` as a shareable config.
 
+## Installation
+
+```shell
+# npm
+npm install -D eslint-config-retn0
+
+# yarn
+yarn add -D eslint-config-retn0
+```
+
 ## Usage
 
 You can use it by specifying `eslint-config-retn0` in the `extends` section of your ESLint configuration.
