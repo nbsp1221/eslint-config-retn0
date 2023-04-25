@@ -19,7 +19,10 @@ const javascriptRules = {
   'eqeqeq': ['error'],
   'func-call-spacing': ['error'],
   'function-call-argument-newline': ['error', 'consistent'],
-  'function-paren-newline': ['error', 'multiline'],
+  /**
+   * @see https://eslint.org/docs/latest/rules/function-paren-newline
+   */
+  'function-paren-newline': ['error', 'consistent'],
   'implicit-arrow-linebreak': ['error'],
   'indent': ['error', 2, { 'SwitchCase': 1 }],
   'jsx-quotes': ['error'],
