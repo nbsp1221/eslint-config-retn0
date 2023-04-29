@@ -4,11 +4,11 @@
 [![npm](https://img.shields.io/npm/v/eslint-config-retn0?style=flat-square)](https://www.npmjs.com/package/eslint-config-retn0)
 [![gitmoji](https://img.shields.io/badge/gitmoji-%20😜%20😍-FFDD67.svg?style=flat-square)](https://gitmoji.dev)
 
-This package provides retn0's `.eslintrc` as a shareable config.
+This package provides my custom `.eslintrc` as a shareable config.
 
 ## Installation
 
-```shell
+```sh
 # npm
 npm install -D eslint-config-retn0
 
