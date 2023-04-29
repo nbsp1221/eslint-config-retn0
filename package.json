@@ -1,7 +1,7 @@
 {
   "name": "eslint-config-retn0",
   "version": "1.6.1",
-  "description": "✨ ESLint configuration for retn0 to reflect my personal preferences",
+  "description": "🧹 My custom ESLint configuration",
   "keywords": [
     "eslint",
     "eslint-config"
