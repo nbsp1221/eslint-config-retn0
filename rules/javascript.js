@@ -44,7 +44,15 @@ const javascriptRules = {
   'object-curly-spacing': ['error', 'always'],
   'object-property-newline': ['error', { allowAllPropertiesOnSameLine: true }],
   'object-shorthand': ['error', 'always', { avoidQuotes: true }],
-  'operator-linebreak': ['error', 'none'],
+  /**
+   * @see https://eslint.org/docs/latest/rules/operator-linebreak
+   */
+  'operator-linebreak': ['error', 'after', {
+    overrides: {
+      '?': 'before',
+      ':': 'before',
+    },
+  }],
   'padded-blocks': ['error', 'never'],
   'quotes': ['error', 'single', { avoidEscape: true }],
   'rest-spread-spacing': ['error'],
