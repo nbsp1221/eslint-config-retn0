@@ -24,7 +24,14 @@ const javascriptRules = {
    */
   'function-paren-newline': ['error', 'consistent'],
   'implicit-arrow-linebreak': ['error'],
-  'indent': ['error', 2, { 'SwitchCase': 1 }],
+  /**
+   * @see https://eslint.org/docs/latest/rules/indent
+   */
+  'indent': ['error', 2, {
+    offsetTernaryExpressions: true,
+    SwitchCase: 1,
+  }],
+  // 'indent': ['error', 2, { 'SwitchCase': 1 }],
   'jsx-quotes': ['error'],
   'key-spacing': ['error'],
   'keyword-spacing': ['error'],
