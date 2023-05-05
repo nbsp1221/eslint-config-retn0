@@ -8,8 +8,11 @@
     "tailwindcss"
   ],
   "editor.codeActionsOnSave": {
-    "source.fixAll": true
+    "source.fixAll.eslint": true
   },
   "editor.tabSize": 2,
-  "files.eol": "\n"
+  "eslint.nodePath": ".yarn/sdks",
+  "files.eol": "\n",
+  "typescript.enablePromptUseWorkspaceTsdk": true,
+  "typescript.tsdk": ".yarn/sdks/typescript/lib"
 }
