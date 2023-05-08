@@ -3,6 +3,7 @@ const typescriptRules = require('./rules/typescript');
 const importRules = require('./rules/import');
 const reactRules = require('./rules/react');
 const tailwindcssRules = require('./rules/tailwindcss');
+const markdownlintRules = require('./rules/markdownlint');
 
 function isInstalled(packageNames) {
   return packageNames.every((packageName) => {
@@ -67,6 +68,15 @@ function createConfig() {
         callees: ['classnames', 'clsx', 'ctl', 'twMerge'],
       },
     };
+  }
+
+  if (isInstalled(['markdownlint', 'eslint-plugin-markdownlint'])) {
+    config.overrides.push({
+      files: ['*.md'],
+      parser: 'eslint-plugin-markdownlint/parser',
+      plugins: ['markdownlint'],
+      rules: markdownlintRules,
+    });
   }
 
   return config;
