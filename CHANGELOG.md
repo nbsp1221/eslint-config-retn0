@@ -1,5 +1,13 @@
 # Changelog
 
+## 1.8.0 / 2023-05-08
+
+- [Breaking] ✨ Create eslint-plugin-markdownlint rules
+- [Breaking] ⬆️ Upgrade dependencies
+- [Breaking] ✨ Add `offsetTernaryExpressions` option to `indent`
+- [Patch] 👷 Add GitHub Actions CI for linting
+- [Patch] 🔧 Upgrade to Yarn Berry
+
 ## 1.7.0 / 2023-04-30
 
 - [Breaking] ✨ Change `operator-linebreak` from `none` to `after`
