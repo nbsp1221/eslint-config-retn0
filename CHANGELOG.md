@@ -2,6 +2,7 @@
 
 ## Unreleased
 
+- [Breaking] ✨ Add `import/order` rule
 - [Patch] ⬆️ Upgrade dependencies
 
 ## 1.8.0 / 2023-05-08
