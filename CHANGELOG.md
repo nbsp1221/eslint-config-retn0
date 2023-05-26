@@ -1,6 +1,6 @@
 # Changelog
 
-## Unreleased
+## 1.9.0 / 2023-05-26
 
 - [Breaking] ✨ Add `import/order` rule
 - [Patch] ⬆️ Upgrade dependencies
