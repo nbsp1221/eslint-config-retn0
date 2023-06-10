@@ -2,6 +2,7 @@
 
 ## Unreleased
 
+- [Breaking] ✨ Add rules about alphabetize sorting for import statements
 - [Breaking] ⬆️ Upgrade dependencies
 
 ## 1.9.0 / 2023-05-26

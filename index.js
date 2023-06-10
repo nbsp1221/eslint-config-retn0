@@ -1,9 +1,9 @@
-const javascriptRules = require('./rules/javascript');
-const typescriptRules = require('./rules/typescript');
 const importRules = require('./rules/import');
+const javascriptRules = require('./rules/javascript');
+const markdownlintRules = require('./rules/markdownlint');
 const reactRules = require('./rules/react');
 const tailwindcssRules = require('./rules/tailwindcss');
-const markdownlintRules = require('./rules/markdownlint');
+const typescriptRules = require('./rules/typescript');
 
 function isInstalled(packageNames) {
   return packageNames.every((packageName) => {
@@ -52,6 +52,10 @@ function createConfig() {
   if (isInstalled(['eslint-plugin-import'])) {
     config.plugins.push('import');
     config.rules = { ...config.rules, ...importRules };
+    config.settings = {
+      ...config.settings,
+      'import/external-module-folders': ['node_modules', '.yarn'],
+    };
   }
 
   if (isInstalled(['eslint-plugin-react'])) {

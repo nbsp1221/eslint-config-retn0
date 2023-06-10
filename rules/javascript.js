@@ -66,6 +66,12 @@ const javascriptRules = {
   'semi': ['error'],
   'semi-spacing': ['error'],
   'semi-style': ['error'],
+  /**
+   * @see https://eslint.org/docs/latest/rules/sort-imports
+   */
+  'sort-imports': ['warn', {
+    ignoreDeclarationSort: true,
+  }],
   'space-before-blocks': ['error'],
   'space-before-function-paren': ['error', {
     anonymous: 'always',
