@@ -2,6 +2,7 @@ const importRules = require('./rules/import');
 const javascriptRules = require('./rules/javascript');
 const markdownlintRules = require('./rules/markdownlint');
 const reactRules = require('./rules/react');
+const simpleImportSortRules = require('./rules/simple-import-sort');
 const tailwindcssRules = require('./rules/tailwindcss');
 const typescriptRules = require('./rules/typescript');
 
@@ -56,6 +57,11 @@ function createConfig() {
       ...config.settings,
       'import/external-module-folders': ['node_modules', '.yarn'],
     };
+  }
+
+  if (isInstalled(['eslint-plugin-simple-import-sort'])) {
+    config.plugins.push('simple-import-sort');
+    config.rules = { ...config.rules, ...simpleImportSortRules };
   }
 
   if (isInstalled(['eslint-plugin-react'])) {

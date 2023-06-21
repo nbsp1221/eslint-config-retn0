@@ -1,5 +1,9 @@
 # Changelog
 
+## Unreleased
+
+- [Breaking] ✨ Add rules about alphabetize sorting for export statements
+
 ## 1.10.0 / 2023-06-10
 
 - [Breaking] ✨ Add rules about alphabetize sorting for import statements
