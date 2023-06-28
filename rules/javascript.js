@@ -39,7 +39,10 @@ const javascriptRules = {
   'new-parens': ['error'],
   'no-extra-semi': ['error'],
   'no-mixed-spaces-and-tabs': ['error'],
-  'no-multi-spaces': ['error'],
+  /**
+   * @see https://eslint.org/docs/latest/rules/no-multi-spaces
+   */
+  'no-multi-spaces': ['error', { ignoreEOLComments: true }],
   'no-multiple-empty-lines': ['error', { max: 1 }],
   'no-tabs': ['error'],
   'no-trailing-spaces': ['error'],

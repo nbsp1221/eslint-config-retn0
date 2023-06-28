@@ -1,5 +1,9 @@
 # Changelog
 
+## Unreleased
+
+- [Breaking] ✨ Add `ignoreEOLComments` options to `no-multi-spaces`
+
 ## 1.11.0 / 2023-06-22
 
 - [Breaking] ✨ Add rules about alphabetize sorting for export statements
