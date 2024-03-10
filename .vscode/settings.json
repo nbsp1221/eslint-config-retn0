@@ -11,6 +11,7 @@
     "source.fixAll.eslint": "explicit"
   },
   "editor.tabSize": 2,
+  "eslint.nodePath": ".yarn/sdks",
   "eslint.validate": [
     "javascript",
     "javascriptreact",
@@ -18,7 +19,6 @@
     "typescript",
     "typescriptreact"
   ],
-  "eslint.nodePath": ".yarn/sdks",
   "files.eol": "\n",
   "typescript.enablePromptUseWorkspaceTsdk": true,
   "typescript.tsdk": ".yarn/sdks/typescript/lib"

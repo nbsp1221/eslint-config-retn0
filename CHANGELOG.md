@@ -1,5 +1,9 @@
 # Changelog
 
+## Unreleased
+
+- [Breaking] ⬆️ Upgrade dependencies
+
 ## 1.12.0 / 2023-06-28
 
 - [Breaking] ✨ Add `ignoreEOLComments` options to `no-multi-spaces`
