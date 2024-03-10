@@ -46,7 +46,13 @@ const javascriptRules = {
   'no-multiple-empty-lines': ['error', { max: 1 }],
   'no-tabs': ['error'],
   'no-trailing-spaces': ['error'],
-  'no-unused-vars': ['warn'],
+  /**
+   * @see https://eslint.org/docs/latest/rules/no-unused-vars
+   */
+  'no-unused-vars': ['warn', {
+    argsIgnorePattern: '^_',
+    varsIgnorePattern: '^_',
+  }],
   'no-var': ['error'],
   'no-whitespace-before-property': ['error'],
   'nonblock-statement-body-position': ['error'],
