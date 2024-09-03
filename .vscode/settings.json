@@ -1,16 +1,28 @@
 {
   "cSpell.words": [
-    "callees",
-    "clsx",
+    "backreference",
+    "compat",
+    "iife",
+    "linebreak",
     "multilines",
     "nbsp",
+    "nonblock",
+    "nonconstructor",
+    "nonoctal",
     "retn",
-    "tailwindcss"
+    "stroustrup",
+    "tailwindcss",
+    "textnodes"
   ],
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": "explicit"
   },
   "editor.tabSize": 2,
+  "eslint.codeActionsOnSave.rules": [
+    "!prefer-const",
+    "!@stylistic/no-multiple-empty-lines",
+    "*"
+  ],
   "eslint.nodePath": ".yarn/sdks",
   "eslint.validate": [
     "javascript",
@@ -20,6 +32,10 @@
     "typescriptreact"
   ],
   "files.eol": "\n",
+  "search.exclude": {
+    "**/.yarn": true,
+    "**/.pnp.*": true
+  },
   "typescript.enablePromptUseWorkspaceTsdk": true,
   "typescript.tsdk": ".yarn/sdks/typescript/lib"
 }

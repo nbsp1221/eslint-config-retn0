@@ -2,8 +2,9 @@
 
 ## Unreleased
 
-- [Breaking] ⬆️ Upgrade dependencies
-- [Breaking] ✨ Update `no-unused-vars` to ignore '_' prefixed variables and arguments
+- `all`: ⬆️ Upgrade dependencies
+- `no-unused-vars`: ✨ Update to ignore `_` prefixed variables and arguments
+- `all`: ✨ Migrate to ESLint v9
 
 ## 1.12.0 / 2023-06-28
 

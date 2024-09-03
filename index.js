@@ -1,95 +1,66 @@
-const importRules = require('./rules/import');
-const javascriptRules = require('./rules/javascript');
-const markdownlintRules = require('./rules/markdownlint');
-const reactRules = require('./rules/react');
-const simpleImportSortRules = require('./rules/simple-import-sort');
-const tailwindcssRules = require('./rules/tailwindcss');
-const typescriptRules = require('./rules/typescript');
+import { jsConfig } from './configs/js.js';
+import { generatePerfectionistConfig } from './configs/perfectionist.js';
+import { reactConfig } from './configs/react.js';
+import { stylisticConfig } from './configs/stylistic.js';
+import { tsConfig } from './configs/ts.js';
 
-function isInstalled(packageNames) {
-  return packageNames.every((packageName) => {
-    try {
-      if (require.resolve(packageName)) {
-        return true;
-      }
+function validateConfig(config) {
+  const ruleKeys = Object
+    .keys(config.rules)
+    .filter((ruleKey) => !(ruleKey.split('/')[1] in config.rules));
 
-      return false;
+  const sortedRuleKeys = [...ruleKeys].sort((left, right) => {
+    if (left.startsWith('@') && !right.startsWith('@')) {
+      return 1;
     }
-    catch {
-      return false;
+
+    if (!left.startsWith('@') && right.startsWith('@')) {
+      return -1;
     }
+
+    return left.localeCompare(right);
   });
+
+  for (let i = 0; i < ruleKeys.length; i++) {
+    if (ruleKeys[i] !== sortedRuleKeys[i]) {
+      throw new Error(`The ${ruleKeys[i]} rule is not sorted. Please sort them alphabetically.`);
+    }
+  }
+
+  return true;
 }
 
-function createConfig() {
-  /** @type {import('eslint').Linter.Config} */
-  const config = {
-    parserOptions: {
-      ecmaFeatures: {
-        jsx: true,
-      },
-      ecmaVersion: 'latest',
-      sourceType: 'module',
-    },
-    plugins: [],
-    rules: {
-      ...javascriptRules,
-    },
-    overrides: [],
-    settings: {},
-  };
+/**
+ * @typedef PerfectionistOptions
+ * @type {object}
+ * @property {string[]} [internalPattern=['~/**']]
+ *
+ * @param {object} [options]
+ * @param {boolean} [options.js=true]
+ * @param {PerfectionistOptions|boolean} [options.perfectionist={}]
+ * @param {boolean} [options.react=true]
+ * @param {boolean} [options.stylistic=true]
+ * @param {boolean} [options.ts=true]
+ * @returns {object[]}
+ */
+export function createConfigs(options = {}) {
+  const {
+    js = true,
+    perfectionist = {},
+    react = true,
+    stylistic = true,
+    ts = true,
+  } = options;
 
-  if (isInstalled(['typescript', '@typescript-eslint/parser', '@typescript-eslint/eslint-plugin'])) {
-    config.overrides.push({
-      files: ['*.ts', '*.tsx'],
-      parser: '@typescript-eslint/parser',
-      plugins: ['@typescript-eslint'],
-      rules: {
-        ...typescriptRules,
-      },
-    });
-  }
+  const configs = [
+    js && jsConfig,
+    perfectionist && generatePerfectionistConfig(perfectionist),
+    react && reactConfig,
+    stylistic && stylisticConfig,
+    ts && tsConfig,
+  ]
+    .filter(Boolean)
+    .filter(validateConfig);
 
-  if (isInstalled(['eslint-plugin-import'])) {
-    config.plugins.push('import');
-    config.rules = { ...config.rules, ...importRules };
-    config.settings = {
-      ...config.settings,
-      'import/external-module-folders': ['node_modules', '.yarn'],
-    };
-  }
-
-  if (isInstalled(['eslint-plugin-simple-import-sort'])) {
-    config.plugins.push('simple-import-sort');
-    config.rules = { ...config.rules, ...simpleImportSortRules };
-  }
-
-  if (isInstalled(['eslint-plugin-react'])) {
-    config.plugins.push('react');
-    config.rules = { ...config.rules, ...reactRules };
-  }
-
-  if (isInstalled(['tailwindcss', 'eslint-plugin-tailwindcss'])) {
-    config.plugins.push('tailwindcss');
-    config.rules = { ...config.rules, ...tailwindcssRules };
-    config.settings = {
-      ...config.settings,
-      tailwindcss: {
-        callees: ['classnames', 'clsx', 'ctl', 'twMerge'],
-      },
-    };
-  }
-
-  if (isInstalled(['markdownlint', 'eslint-plugin-markdownlint'])) {
-    config.overrides.push({
-      files: ['*.md'],
-      parser: 'eslint-plugin-markdownlint/parser',
-      plugins: ['markdownlint'],
-      rules: markdownlintRules,
-    });
-  }
-
-  return config;
+  return configs;
 }
-
-module.exports = createConfig();
