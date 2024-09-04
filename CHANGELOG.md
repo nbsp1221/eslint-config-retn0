@@ -1,6 +1,6 @@
 # Changelog
 
-## Unreleased
+## v2.0.0 - 2024.09.04
 
 - `no-unused-vars`: ✨ Update to ignore `_` prefixed variables and arguments
 - `all`: ⬆️ Upgrade dependencies
