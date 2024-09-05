@@ -17,7 +17,7 @@
     "url": "git+https://github.com/nbsp1221/eslint-config-retn0.git"
   },
   "files": [
-    "rules",
+    "configs",
     "index.js"
   ],
   "type": "module",
