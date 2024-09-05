@@ -1,6 +1,6 @@
 # Changelog
 
-## Unreleased
+## v2.0.1 - 2024.09.05
 
 - `all`: 🐛 Include missing `configs` directory for deployment
 
