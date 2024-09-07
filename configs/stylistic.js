@@ -238,11 +238,14 @@ export const stylisticConfig = {
      * @see https://eslint.style/rules/default/lines-around-comment
      */
     '@stylistic/lines-around-comment': ['error', {
-      beforeLineComment: true,
       allowBlockStart: true,
       allowObjectStart: true,
       allowArrayStart: true,
       allowClassStart: true,
+      allowEnumStart: true,
+      allowInterfaceStart: true,
+      allowModuleStart: true,
+      allowTypeStart: true,
     }],
 
     /**
