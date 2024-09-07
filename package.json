@@ -27,6 +27,7 @@
   },
   "packageManager": "yarn@4.4.1",
   "scripts": {
+    "inspect": "eslint --inspect-config",
     "lint": "eslint ."
   },
   "dependencies": {
