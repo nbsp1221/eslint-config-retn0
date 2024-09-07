@@ -24,6 +24,11 @@ export const jsConfig = {
     'default-param-last': ['error'],
 
     /**
+     * @see https://eslint.org/docs/latest/rules/dot-notation
+     */
+    'dot-notation': ['error'],
+
+    /**
      * @see https://eslint.org/docs/latest/rules/eqeqeq
      */
     'eqeqeq': ['error'],
@@ -42,6 +47,11 @@ export const jsConfig = {
      * @see https://eslint.org/docs/latest/rules/max-depth
      */
     'max-depth': ['warn', 4],
+
+    /**
+     * @see https://eslint.org/docs/latest/rules/no-array-constructor
+     */
+    'no-array-constructor': ['error'],
 
     /**
      * @see https://eslint.org/docs/latest/rules/no-async-promise-executor
@@ -142,6 +152,11 @@ export const jsConfig = {
      * @see https://eslint.org/docs/latest/rules/no-empty-character-class
      */
     'no-empty-character-class': ['error'],
+
+    /**
+     * @see https://eslint.org/docs/latest/rules/no-empty-function
+     */
+    'no-empty-function': ['error', { allow: ['arrowFunctions'] }],
 
     /**
      * @see https://eslint.org/docs/latest/rules/no-empty-pattern
@@ -359,6 +374,11 @@ export const jsConfig = {
     'no-unsafe-optional-chaining': ['error'],
 
     /**
+     * @see https://eslint.org/docs/latest/rules/no-unused-expressions
+     */
+    'no-unused-expressions': ['error'],
+
+    /**
      * @see https://eslint.org/docs/latest/rules/no-unused-labels
      */
     'no-unused-labels': ['error'],
@@ -390,6 +410,11 @@ export const jsConfig = {
      * @see https://eslint.org/docs/latest/rules/no-useless-catch
      */
     'no-useless-catch': ['error'],
+
+    /**
+     * @see https://eslint.org/docs/latest/rules/no-useless-constructor
+     */
+    'no-useless-constructor': ['error'],
 
     /**
      * @see https://eslint.org/docs/latest/rules/no-useless-escape
@@ -470,6 +495,11 @@ export const jsConfig = {
      * @see https://eslint.org/docs/latest/rules/require-atomic-updates
      */
     'require-atomic-updates': ['error'],
+
+    /**
+     * @see https://eslint.org/docs/latest/rules/require-await
+     */
+    'require-await': ['error'],
 
     /**
      * @see https://eslint.org/docs/latest/rules/require-yield

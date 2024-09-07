@@ -5,6 +5,7 @@
 - `@stylistic/lines-around-comment`: ✨ Enforce spacing only above block comments and add TypeScript support
 - `all`: 🔧 Add `inspect` script for ESLint configuration inspection
 - `all`: ✨ Remove unnecessary `globals` options and unify file patterns
+- `all`: ✨ Add missing recommended rules for TypeScript
 
 ## v2.0.1 - 2024.09.05
 

@@ -6,21 +6,8 @@ import { stylisticConfig } from './configs/stylistic.js';
 import { tsConfig } from './configs/ts.js';
 
 function validateConfig(config) {
-  const ruleKeys = Object
-    .keys(config.rules ?? {})
-    .filter((ruleKey) => !(ruleKey.split('/')[1] in config.rules));
-
-  const sortedRuleKeys = [...ruleKeys].sort((left, right) => {
-    if (left.startsWith('@') && !right.startsWith('@')) {
-      return 1;
-    }
-
-    if (!left.startsWith('@') && right.startsWith('@')) {
-      return -1;
-    }
-
-    return left.localeCompare(right);
-  });
+  const ruleKeys = Object.keys(config.rules ?? {}).filter((ruleKey) => config.rules[ruleKey][0] !== 'off');
+  const sortedRuleKeys = [...ruleKeys].sort();
 
   for (let i = 0; i < ruleKeys.length; i++) {
     if (ruleKeys[i] !== sortedRuleKeys[i]) {
