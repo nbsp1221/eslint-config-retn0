@@ -7,12 +7,7 @@ export function generatePerfectionistConfig(options = {}) {
 
   return {
     files: [
-      '**/*.js',
-      '**/*.jsx',
-      '**/*.mjs',
-      '**/*.cjs',
-      '**/*.ts',
-      '**/*.tsx',
+      '**/*.{js,mjs,cjs,jsx,ts,mts,cts,tsx}',
     ],
     plugins: {
       perfectionist: perfectionistPlugin,

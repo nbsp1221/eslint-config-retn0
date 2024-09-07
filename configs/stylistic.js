@@ -2,12 +2,7 @@ import stylisticPlugin from '@stylistic/eslint-plugin';
 
 export const stylisticConfig = {
   files: [
-    '**/*.js',
-    '**/*.jsx',
-    '**/*.mjs',
-    '**/*.cjs',
-    '**/*.ts',
-    '**/*.tsx',
+    '**/*.{js,mjs,cjs,jsx,ts,mts,cts,tsx}',
   ],
   plugins: {
     '@stylistic': stylisticPlugin,

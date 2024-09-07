@@ -1,18 +1,10 @@
 import tsPlugin from '@typescript-eslint/eslint-plugin';
-import tsParser from '@typescript-eslint/parser';
 import { jsConfig } from './js.js';
 
 export const tsConfig = {
   files: [
-    '**/*.ts',
-    '**/*.tsx',
+    '**/*.{ts,mts,cts,tsx}',
   ],
-  languageOptions: {
-    parser: tsParser,
-    parserOptions: {
-      project: true,
-    },
-  },
   plugins: {
     '@typescript-eslint': tsPlugin,
   },

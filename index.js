@@ -1,3 +1,4 @@
+import { baseConfigs } from './configs/base.js';
 import { jsConfig } from './configs/js.js';
 import { generatePerfectionistConfig } from './configs/perfectionist.js';
 import { reactConfig } from './configs/react.js';
@@ -6,7 +7,7 @@ import { tsConfig } from './configs/ts.js';
 
 function validateConfig(config) {
   const ruleKeys = Object
-    .keys(config.rules)
+    .keys(config.rules ?? {})
     .filter((ruleKey) => !(ruleKey.split('/')[1] in config.rules));
 
   const sortedRuleKeys = [...ruleKeys].sort((left, right) => {
@@ -53,6 +54,7 @@ export function createConfigs(options = {}) {
   } = options;
 
   const configs = [
+    ...baseConfigs,
     js && jsConfig,
     perfectionist && generatePerfectionistConfig(perfectionist),
     react && reactConfig,

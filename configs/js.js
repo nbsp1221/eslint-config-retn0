@@ -1,21 +1,7 @@
-import globals from 'globals';
-
 export const jsConfig = {
   files: [
-    '**/*.js',
-    '**/*.jsx',
-    '**/*.mjs',
-    '**/*.cjs',
-    '**/*.ts',
-    '**/*.tsx',
+    '**/*.{js,mjs,cjs,jsx,ts,mts,cts,tsx}',
   ],
-  languageOptions: {
-    globals: {
-      ...globals.browser,
-      ...globals.jest,
-      ...globals.node,
-    },
-  },
   rules: {
     /**
      * @see https://eslint.org/docs/latest/rules/array-callback-return

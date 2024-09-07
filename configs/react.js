@@ -1,21 +1,9 @@
 import reactPlugin from 'eslint-plugin-react';
-import globals from 'globals';
 
 export const reactConfig = {
   files: [
-    '**/*.jsx',
-    '**/*.tsx',
+    '**/*.{jsx,tsx}',
   ],
-  languageOptions: {
-    globals: {
-      ...globals.browser,
-    },
-    parserOptions: {
-      ecmaFeatures: {
-        jsx: true,
-      },
-    },
-  },
   plugins: {
     react: reactPlugin,
   },
