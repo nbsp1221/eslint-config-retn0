@@ -1,6 +1,6 @@
 # Changelog
 
-## Unreleased
+## v2.1.0 - 2024.09.11
 
 - `@stylistic/lines-around-comment`: ✨ Enforce spacing only above block comments and add TypeScript support
 - `all`: 🔧 Add `inspect` script for ESLint configuration inspection
