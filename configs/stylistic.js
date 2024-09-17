@@ -271,10 +271,7 @@ export const stylisticConfig = {
     /**
      * @see https://eslint.style/rules/default/no-extra-parens
      */
-    '@stylistic/no-extra-parens': ['error', 'all', {
-      nestedBinaryExpressions: false,
-      ignoreJSX: 'multi-line',
-    }],
+    '@stylistic/no-extra-parens': ['error', 'functions'],
 
     /**
      * @see https://eslint.style/rules/default/no-extra-semi

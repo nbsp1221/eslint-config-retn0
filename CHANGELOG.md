@@ -1,5 +1,9 @@
 # Changelog
 
+## Unreleased
+
+- `@stylistic/no-extra-parens`: ✨ Change option from `all` to `functions`
+
 ## v2.1.0 - 2024.09.11
 
 - `@stylistic/lines-around-comment`: ✨ Enforce spacing only above block comments and add TypeScript support

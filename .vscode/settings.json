@@ -10,6 +10,7 @@
     "nonblock",
     "nonconstructor",
     "nonoctal",
+    "parens",
     "retn",
     "stroustrup",
     "tailwindcss",
