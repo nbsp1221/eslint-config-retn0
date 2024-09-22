@@ -3,6 +3,7 @@
 ## Unreleased
 
 - `no-useless-return`: ✨ Change severity to `warn`
+- `all`: ⬆️ Upgrade dependencies
 
 ## v2.2.0 - 2024.09.18
 
