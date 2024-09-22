@@ -21,6 +21,7 @@
   },
   "editor.tabSize": 2,
   "eslint.codeActionsOnSave.rules": [
+    "!no-useless-return",
     "!prefer-const",
     "!@stylistic/no-multiple-empty-lines",
     "*"

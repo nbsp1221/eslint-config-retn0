@@ -1,5 +1,9 @@
 # Changelog
 
+## Unreleased
+
+- `no-useless-return`: ✨ Change severity to `warn`
+
 ## v2.2.0 - 2024.09.18
 
 - `@stylistic/no-extra-parens`: ✨ Change option from `all` to `functions`

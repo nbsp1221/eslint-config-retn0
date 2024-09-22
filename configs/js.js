@@ -429,7 +429,7 @@ export const jsConfig = {
     /**
      * @see https://eslint.org/docs/latest/rules/no-useless-return
      */
-    'no-useless-return': ['error'],
+    'no-useless-return': ['warn'],
 
     /**
      * @see https://eslint.org/docs/latest/rules/no-var
