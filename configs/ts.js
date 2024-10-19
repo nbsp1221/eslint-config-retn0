@@ -206,7 +206,12 @@ export const tsConfig = {
     /**
      * @see https://typescript-eslint.io/rules/no-misused-promises
      */
-    '@typescript-eslint/no-misused-promises': ['error'],
+    '@typescript-eslint/no-misused-promises': ['error', {
+      checksVoidReturn: {
+        arguments: false,
+        attributes: false,
+      },
+    }],
 
     /**
      * @see https://typescript-eslint.io/rules/no-mixed-enums

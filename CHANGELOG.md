@@ -4,6 +4,7 @@
 
 - `no-useless-return`: ✨ Change severity to `warn`
 - `no-void`: ✨ Set `allowAsStatement` option to `true`
+- `@typescript-eslint/no-misused-promises`: ✨ Add `checksVoidReturn` option
 - `all`: ⬆️ Upgrade dependencies
 
 ## v2.2.0 - 2024.09.18
