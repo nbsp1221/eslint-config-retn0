@@ -439,7 +439,7 @@ export const jsConfig = {
     /**
      * @see https://eslint.org/docs/latest/rules/no-void
      */
-    'no-void': ['error'],
+    'no-void': ['error', { allowAsStatement: true }],
 
     /**
      * @see https://eslint.org/docs/latest/rules/no-with

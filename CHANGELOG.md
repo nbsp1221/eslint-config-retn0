@@ -3,6 +3,7 @@
 ## Unreleased
 
 - `no-useless-return`: ✨ Change severity to `warn`
+- `no-void`: ✨ Set `allowAsStatement` option to `true`
 - `all`: ⬆️ Upgrade dependencies
 
 ## v2.2.0 - 2024.09.18
