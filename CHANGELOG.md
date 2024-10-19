@@ -1,6 +1,6 @@
 # Changelog
 
-## Unreleased
+## v2.3.0 - 2024.10.20
 
 - `no-useless-return`: ✨ Change severity to `warn`
 - `no-void`: ✨ Set `allowAsStatement` option to `true`
