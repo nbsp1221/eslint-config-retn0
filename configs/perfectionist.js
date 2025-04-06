@@ -2,7 +2,7 @@ import perfectionistPlugin from 'eslint-plugin-perfectionist';
 
 export function generatePerfectionistConfig(options = {}) {
   const {
-    internalPattern = ['~/**'],
+    internalPattern = ['^~/.*'],
   } = options;
 
   return {
