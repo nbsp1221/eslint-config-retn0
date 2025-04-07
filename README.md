@@ -13,9 +13,9 @@ This package provides my custom ESLint configuration as a shareable config.
 > The flat config is not compatible with older version of ESLint.
 
 - [Node.js](https://nodejs.org) 18.18.0 or higher
-- [ESLint](https://eslint.org) 9.13.0 or higher
-- [TypeScript](https://www.typescriptlang.org) 5.0.0 or higher (if you are using TypeScript)
-- [React](https://react.dev) 18.0.0 or higher (if you are using React)
+- [ESLint](https://eslint.org) 9.24.0 or higher
+- [TypeScript](https://www.typescriptlang.org) 5.8.3 or higher (if you are using TypeScript)
+- [React](https://react.dev) 19.1.0 or higher (if you are using React)
 
 ## Installation
 
