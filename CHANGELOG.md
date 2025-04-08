@@ -1,6 +1,6 @@
 # Changelog
 
-## Unreleased
+## v2.4.0 - 2025.04.08
 
 - `all`: ⬆️ Upgrade dependencies
 
