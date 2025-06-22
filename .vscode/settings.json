@@ -26,7 +26,6 @@
     "!@stylistic/no-multiple-empty-lines",
     "*"
   ],
-  "eslint.nodePath": ".yarn/sdks",
   "eslint.validate": [
     "javascript",
     "javascriptreact",
@@ -35,10 +34,5 @@
     "typescriptreact"
   ],
   "files.eol": "\n",
-  "search.exclude": {
-    "**/.yarn": true,
-    "**/.pnp.*": true
-  },
-  "typescript.enablePromptUseWorkspaceTsdk": true,
-  "typescript.tsdk": ".yarn/sdks/typescript/lib"
+  "typescript.enablePromptUseWorkspaceTsdk": true
 }

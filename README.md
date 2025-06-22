@@ -12,15 +12,22 @@ This package provides my custom ESLint configuration as a shareable config.
 > This configuration uses the new flat config format introduced in ESLint v9.
 > The flat config is not compatible with older version of ESLint.
 
-- [Node.js](https://nodejs.org) 18.18.0 or higher
-- [ESLint](https://eslint.org) 9.24.0 or higher
+- [Node.js](https://nodejs.org) 22.16.0 or higher
+- [ESLint](https://eslint.org) 9.29.0 or higher
 - [TypeScript](https://www.typescriptlang.org) 5.8.3 or higher (if you are using TypeScript)
 - [React](https://react.dev) 19.1.0 or higher (if you are using React)
 
 ## Installation
 
 ```sh
+# npm
 npm install -D eslint eslint-config-retn0
+
+# pnpm
+pnpm add -D eslint eslint-config-retn0
+
+# yarn
+yarn add -D eslint eslint-config-retn0
 ```
 
 ## Usage

@@ -8,11 +8,12 @@ jobs:
     env:
       NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
     steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
         with:
-          node-version: 18
+          node-version: 22
           registry-url: https://registry.npmjs.org
-      - run: yarn install
-      - run: yarn config set npmAuthToken $NODE_AUTH_TOKEN
-      - run: yarn npm publish
+      - uses: pnpm/action-setup@v4
+      - run: pnpm install
+      - run: echo "//registry.npmjs.org/:_authToken=$NODE_AUTH_TOKEN" > .npmrc
+      - run: pnpm publish --no-git-checks

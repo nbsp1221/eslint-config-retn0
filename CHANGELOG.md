@@ -1,5 +1,9 @@
 # Changelog
 
+## Unreleased
+
+- `all`: 💥 Migrate from yarn to pnpm and update all dependencies
+
 ## v2.4.0 - 2025.04.08
 
 - `all`: ⬆️ Upgrade dependencies
