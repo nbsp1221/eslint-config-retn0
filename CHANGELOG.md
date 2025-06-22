@@ -1,6 +1,6 @@
 # Changelog
 
-## Unreleased
+## v2.5.0 - 2025.06.23
 
 - `all`: 💥 Migrate from yarn to pnpm and update all dependencies
 
